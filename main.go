@@ -43,6 +43,6 @@ func main() {
 	// Embed the setup allowed in 2 parameter on this below code ...
 	http.ListenAndServe(":"+port, handlers.CORS(AllowedHeaders, AllowedMethods, AllowedOrigins)(r))
 
-	fmt.Println("server running localhost:5000")
-	http.ListenAndServe("localhost:5000", r)
+	// fmt.Println("server running localhost:5000")
+	// http.ListenAndServe("localhost:5000", r)
 }
